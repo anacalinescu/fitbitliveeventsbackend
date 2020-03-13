@@ -27,7 +27,7 @@ public class WebController {
         return "Hello";
     }
 
-    @GetMapping("/getTuples")
+    @GetMapping("/listUsers")
     public List<Map<String, Object>> listUsers() {
         return this.jdbcTemplate.queryForList("SELECT * FROM Users;");
     }
